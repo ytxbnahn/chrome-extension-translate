@@ -1,22 +1,21 @@
 {
-  "name": "yj-translate",
+  "name": "jojo的翻译插件",
   "version": "0.1",
-  "description": "支持网页划词翻译；网页右键跳转到百度翻译；支持多语言翻译",
+  "description": "跳转到cambridge",
   "manifest_version": 2,
   "icons": {
-    "16": "images/get_started16.png",
-    "32": "images/get_started32.png",
-    "48": "images/get_started48.png",
-    "128": "images/get_started128.png"
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
   },
-  "browser_action": {
-    "default_icon": {
-      "16": "images/get_started16.png",
-      "32": "images/get_started32.png"
-    },
-    "default_title": "划词翻译",
-    "default_popup": "popup.html"
-  },
+  // "browser_action": {
+  //   "default_icon": {
+  //     "32": "images/get_started32.png"
+  //   },
+  //   "default_title": "划词翻译",
+  //   "default_popup": "popup.html"
+  // },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -33,6 +32,5 @@
   "background": {
     "scripts": ["background.js"],
     "persistent": false
-  },
-  "options_page": "options.html"
+  }
 }

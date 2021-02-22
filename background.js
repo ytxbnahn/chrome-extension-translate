@@ -18,6 +18,6 @@ chrome.contextMenus.onClicked.addListener(function(info) {
     //如果 id === ↑创建的菜单的id
     if (info.menuItemId === 'translateMenu') {
         //创建一个 标签页 url是：百度的翻译API 翻译内容是用户选中的内容
-        chrome.tabs.create({url: `https://fanyi.baidu.com/#lang-auto/lang-auto/${info.selectionText}`})
+        chrome.tabs.create({url: `https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/${info.selectionText}`})
     }
 })
